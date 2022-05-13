@@ -1,0 +1,106 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #eee;
+  font-family: "Cairo", sans-serif;
+}
+.card {
+  background-color: white;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  position: relative;
+  top: 400px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 1px -5px 12px 0px white;
+  left: 10%;
+}
+a {
+  text-decoration: none;
+  background: white;
+  padding: 20px;
+  border-radius: 50px 0px;
+  color: black;
+  transition: 0.5s;
+  }
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+.card table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  top: 147px;
+  background: #eee;
+  border-radius: 20px;
+}
+
+.card table tr {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card table tr td {
+  padding: 13px;
+}
+.card form {
+  margin: 20px auto;
+}
+.card form input {
+  padding: 17px;
+  border-radius: 20px;
+  border: none;
+  background: white;
+}
+.card form input[type="button"] {
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+}
+.card form input[type="reset"] {
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 20px;
+}
+.card form input[type="reset"]:hover {
+  background-color: black;
+  color: white;
+}
+.card form input:focus {
+  outline: none;
+}
+.card form input[type="button"]:hover {
+  background-color: black;
+  color: white;
+}
+.card h1 {
+  font-size: 24px;
+  transform: translate(-40px, 50px);
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 70%;
+  position: relative;
+}
+.card h1::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  transition: 0.5s;
+  border-radius: 20px;
+  background-color: #eee;
+  width: 1%;
+  height: 100%;
+}
+.card h1:hover::before {
+  width: 100%;
+  z-index: -1;
+  background-color: #607d8b;
+}
