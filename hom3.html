@@ -11,11 +11,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Cairo:wght@600;700&family=Kanit:ital,wght@0,100;1,100&family=Open+Sans&family=Stint+Ultra+Condensed&display=swap"
         rel="stylesheet">
+        
     <title>homwork</title>
 </head>
 
 <body>
     <div class="card">
+        <canvas id="canves" width="300" height="300"></canvas>
         <h1>مساحة ومحيط الدائرة</h1>
         <form action="" name="f">
             <table>
@@ -34,10 +36,20 @@
                         <input type="button" name="test" id="" value="المساحة " onclick="aria(1)">
                         <input type="button" name="test2" id="" value="المحيط" onclick="circumference(2)">
                         <input type="reset" name="" id="" value="جديد ">
+                       
                     </td>
 
 
 
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="test3" id="button" value="ارسم " onclick="art()">
+                        
+                    </td>
+                    <td>
+                        <input type="button" name="text4" id="clear" value="أحذف الشكل" onclick="cleare()">
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -46,8 +58,12 @@
                 </tr>
             </table>
         </form>
+         
     </div>
+     
 <script src="j2js.js"></script>
+
 </body>
 
+</html>
 </html>
